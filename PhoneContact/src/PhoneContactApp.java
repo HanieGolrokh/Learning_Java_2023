@@ -25,6 +25,7 @@ public class PhoneContactApp {
             }
         }
     }
+    // test
 
     public static void displayMenu() {
         System.out.println("Phone Contact");
