@@ -45,7 +45,7 @@ public class PhoneContactApp {
                 break;
             }
 
-            System.out.println("Please enter a number: ");
+            System.out.println("Please enter a phone number: ");
             String userNumber = myObj.nextLine();
 
             contactList.add("Name: " + userName + ", Number: " + userNumber);
