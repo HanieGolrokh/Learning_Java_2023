@@ -6,7 +6,7 @@ This project includes simple codes for printing "Hello, World!" and greeting use
 
 - Run the `HelloWorld.java` script to print "Hello, World!"
 - Execute `HelloName.java & HelloNames.Java` to enter names and receive greetings.
-- Use `HelloMenu` to choose different options from a menu.
+- Use `HelloMenu.java` to choose different options from a menu.
 
 ## Getting Started
 
