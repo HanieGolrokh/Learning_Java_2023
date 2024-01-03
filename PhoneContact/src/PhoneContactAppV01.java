@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class PhoneContactApp {
+public class PhoneContactAppV01 {
     public static List<String> contactList = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -14,20 +14,30 @@ public class PhoneContactApp {
             String userInput = myObj.nextLine();
 
             switch (userInput) {
-                case "1" -> method1(myObj);
-                case "2" -> method2();
-                case "3" -> {
+                case "1": {
+                    addContact(myObj);
+                    break;
+                }
+                case "2":{
+                    printContacts();
+                    break;
+                }
+                case "3" :{
                     System.out.println("Exiting program.");
                     myObj.close();
                     System.exit(0);
+                    break;
                 }
-                default -> System.out.println("Invalid option. Please try again.");
+                default :{
+                    System.out.println("Invalid option. Please try again.");
+                    break;
+                }
             }
+
         }
     }
-    // test
 
-    public static void displayMenu() {
+    private static void displayMenu() {
         System.out.println("Phone Contact");
         System.out.println("-----------------------");
         System.out.println("1. Add new contact");
@@ -36,7 +46,7 @@ public class PhoneContactApp {
         System.out.println("Select a menu item ");
     }
 
-    public static void method1(Scanner myObj) {
+    public static void addContact(Scanner myObj) {
         for (;;) {
             System.out.println("Please enter a name (type 'exit' to stop): ");
             String userName = myObj.nextLine();
@@ -52,7 +62,7 @@ public class PhoneContactApp {
         }
     }
 
-    public static void method2() {
+    public static void printContacts() {
         System.out.println("Contacts in the list:");
         contactList.forEach(System.out::println);
     }
