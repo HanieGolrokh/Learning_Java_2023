@@ -37,7 +37,7 @@ public class PhoneContactAppV01 {
         }
     }
 
-    private static void displayMenu() {
+    public static void displayMenu() {
         System.out.println("Phone Contact");
         System.out.println("-----------------------");
         System.out.println("1. Add new contact");
