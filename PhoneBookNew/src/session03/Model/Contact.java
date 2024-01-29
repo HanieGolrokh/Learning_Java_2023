@@ -1,6 +1,6 @@
 package session03.Model;
 
-public class Contact {
+public abstract class Contact {
     private String name;
     private String number;
     private final ContactType type;

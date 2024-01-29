@@ -5,8 +5,8 @@ import java.security.PrivateKey;
 public class BusinessContact extends Contact{
     private String fax;
 
-    public BusinessContact(String name, String number, ContactType type) {
-        super(name, number, type);
+    public BusinessContact(String name, String number) {
+        super(name, number,ContactType.BUSINESS );
     }
 
     public String getFax() {
